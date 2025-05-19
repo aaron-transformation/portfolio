@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.fedbf86c.css",
+    "main.js": "/portfolio/static/js/main.0375cbcc.js",
+    "static/js/453.b21437c2.chunk.js": "/portfolio/static/js/453.b21437c2.chunk.js",
+    "static/media/seo-example.png": "/portfolio/static/media/seo-example.cc0d06f1c512a77d9310.png",
+    "static/media/atwork-example.png": "/portfolio/static/media/atwork-example.2b0f513592d524bd54b8.png",
+    "static/media/liquidware-example.png": "/portfolio/static/media/liquidware-example.85a6890f5ddc3c7ab988.png",
+    "static/media/AWFY_Logo.png": "/portfolio/static/media/AWFY_Logo.3d3b263ac587883ae9c1.png",
+    "static/media/Liquidware_FInal_Full_Color_Logo.jpg": "/portfolio/static/media/Liquidware_FInal_Full_Color_Logo.c46109dc16c912bb7bb6.jpg",
+    "static/media/WordPress.com-Logo.wine.png": "/portfolio/static/media/WordPress.com-Logo.wine.02afbc6603ce0c1f3b42.png",
+    "static/media/Cute Avatar.png": "/portfolio/static/media/Cute Avatar.8c72a6210a08d3d5e28d.png",
+    "static/media/php.png": "/portfolio/static/media/php.77015ebdac1837247829.png",
+    "static/media/c-sharp-logo.png": "/portfolio/static/media/c-sharp-logo.9b41ba0f988ade8e0276.png",
+    "static/media/revicons.eot": "/portfolio/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/react-logo.png": "/portfolio/static/media/react-logo.bc95ddb0a9f5ff0adff7.png",
+    "static/media/revicons.ttf": "/portfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/seo-logo.jpg": "/portfolio/static/media/seo-logo.9beb72b8b40db511d4f0.jpg",
+    "static/media/linkedin.png": "/portfolio/static/media/linkedin.f249b38224ca41a0b909.png",
+    "static/media/revicons.woff": "/portfolio/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/portfolio/index.html",
+    "main.fedbf86c.css.map": "/portfolio/static/css/main.fedbf86c.css.map",
+    "main.0375cbcc.js.map": "/portfolio/static/js/main.0375cbcc.js.map",
+    "453.b21437c2.chunk.js.map": "/portfolio/static/js/453.b21437c2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fedbf86c.css",
+    "static/js/main.0375cbcc.js"
+  ]
+}
