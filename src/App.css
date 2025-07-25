@@ -505,6 +505,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
 }
 
+.proj-link {
+  color: whitte;
+}
+
 /*Contact Form CSS*/
 .align-items-center-contact {
   padding-top: 4rem;
