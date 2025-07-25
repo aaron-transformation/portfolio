@@ -15,11 +15,13 @@ export const Projects = () => {
             title: "AtWork Group",
             description: "Recruiting Agency",
             imgURL: clientImg1,
+            url: "https://www.atwork.com/",
         },
         {
             title: "CMS Website Development",
             description: "Developing & Troubleshooting",
             imgURL: clientImg2,
+            url: "https://www.atwork.com/",
         },
 
     ];
@@ -28,11 +30,13 @@ export const Projects = () => {
             title: "Liquidware",
             description: "Digital Workspace Management",
             imgURL: clientImg3,
+            url: "https://www.liquidware.com/",
         },
         {
             title: "Converting Figma Mockups",
             description: "Design & Develop",
             imgURL: clientImg4,
+            url: "https://www.liquidware.com/",
         },
     ];
     const seo = [
@@ -40,11 +44,13 @@ export const Projects = () => {
             title: "SEOLevelUp",
             description: "Web Design SEO Company",
             imgURL: clientImg5,
+            url: "https://seolevelup.com/",
         },
         {
             title: "Lift and Shifts",
             description: "Migrating Content",
             imgURL: clientImg6,
+            url: "https://seolevelup.com/",
         },
     ];
 
