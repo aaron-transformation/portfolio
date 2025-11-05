@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.aa7bdaab.css",
+    "main.css": "/portfolio/static/css/main.7830e67b.css",
     "main.js": "/portfolio/static/js/main.b0e029d5.js",
     "static/js/453.b21437c2.chunk.js": "/portfolio/static/js/453.b21437c2.chunk.js",
     "static/media/seo-example.png": "/portfolio/static/media/seo-example.cc0d06f1c512a77d9310.png",
     "static/media/atwork-example.png": "/portfolio/static/media/atwork-example.2b0f513592d524bd54b8.png",
     "static/media/liquidware-example.png": "/portfolio/static/media/liquidware-example.85a6890f5ddc3c7ab988.png",
     "static/media/AWFY_Logo.png": "/portfolio/static/media/AWFY_Logo.3d3b263ac587883ae9c1.png",
+    "static/media/mountains-background.png": "/portfolio/static/media/mountains-background.2f00a8f56cc2cbf2f222.png",
+    "static/media/night-background.png": "/portfolio/static/media/night-background.93a0459daa4584121be2.png",
     "static/media/Liquidware_FInal_Full_Color_Logo.jpg": "/portfolio/static/media/Liquidware_FInal_Full_Color_Logo.c46109dc16c912bb7bb6.jpg",
     "static/media/WordPress.com-Logo.wine.png": "/portfolio/static/media/WordPress.com-Logo.wine.02afbc6603ce0c1f3b42.png",
     "static/media/Cute Avatar.png": "/portfolio/static/media/Cute Avatar.8c72a6210a08d3d5e28d.png",
@@ -19,12 +21,12 @@
     "static/media/linkedin.png": "/portfolio/static/media/linkedin.f249b38224ca41a0b909.png",
     "static/media/revicons.woff": "/portfolio/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/portfolio/index.html",
-    "main.aa7bdaab.css.map": "/portfolio/static/css/main.aa7bdaab.css.map",
+    "main.7830e67b.css.map": "/portfolio/static/css/main.7830e67b.css.map",
     "main.b0e029d5.js.map": "/portfolio/static/js/main.b0e029d5.js.map",
     "453.b21437c2.chunk.js.map": "/portfolio/static/js/453.b21437c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa7bdaab.css",
+    "static/css/main.7830e67b.css",
     "static/js/main.b0e029d5.js"
   ]
 }
