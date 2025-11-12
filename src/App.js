@@ -5,18 +5,29 @@ import { Skills } from './components/Skill';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import { ThemeProvider } from './util.js/ThemeContext';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+// export const ThemeContext = createContext(null);
+
 function App() {
+  // const [theme, setTheme] = useState("dark");
+
+  // const toggleTheme = () => {
+  //   setTheme((curr ) => (curr === "dark" ? "light" : "dark"));
+  // };
+
   return (
-    <div className="App">
-      <NavBar />
-      <Banner />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <div className="App" >
+        <NavBar />
+        <Banner />
+        <Skills />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 

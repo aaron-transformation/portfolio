@@ -1,10 +1,15 @@
 import { Container, Row, Col } from "react-bootstrap";
+import { useState } from "react";
 import logo from "../assets/Cute Avatar.png";
+import chat from "../assets/chat-bubble1.png";
 import navIcon1 from '../assets/linkedin.png';
 import navIcon2 from '../assets/upwork.png';
 import navIcon3 from '../assets/github-mark-white.png';
 
 export const Footer = () => {
+  const [hover, setHover] = useState(false);
+
+
   return (
     <footer className="footer">
       <Container>

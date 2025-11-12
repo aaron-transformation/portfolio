@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
-import { HashLink } from 'react-router-hash-link';
 import headerImg from '../assets/Cute Avatar.png'
 
 export const Banner = () => {
@@ -49,12 +47,13 @@ export const Banner = () => {
                         <span className="tagline">Welcome to my Portfolio</span>
                         <h1>{`Hi I'm Aaron, a `}</h1>
                         <h1><span className="wrap">{text}</span></h1>
-                        <p>Hello there! I'm Aaron Tran, a highly motivated and creative Web Developer on a 
+                        <p>
+                            Hello there! I'm Aaron Tran, a highly motivated and creative Web Developer on a 
                             mission to turn imaginative ideas into seamless, user-centric digital 
                             experiences. With a passion for coding and a knack for problem-solving, 
                             I bring a blend of technical expertise and a keen eye for design to the 
-                            ever-evolving landscape of web development.</p>
-
+                            ever-evolving landscape of web development.
+                        </p>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Avatar" />

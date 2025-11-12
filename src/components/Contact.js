@@ -21,7 +21,7 @@ export const Contact = () => {
 
     return (
         <section className='contact' id="connect">
-            <Container>
+            <Container className='contact-content'>
                 <Row className="align-items-center-contact">
                     <Col md={6}>
                         <h2>Get In Touch</h2>

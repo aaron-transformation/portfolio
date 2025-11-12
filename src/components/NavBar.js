@@ -1,14 +1,21 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import {Navbar, Container, Nav} from "react-bootstrap";
 import navIcon1 from '../assets/linkedin.png';
 import navIcon2 from '../assets/upwork.png';
 import navIcon3 from '../assets/github-mark-white.png';
+import lightIcon from '../assets/icon-sun.png';
+import darkIcon from '../assets/icons-moon.png';
+
 import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router } from "react-router-dom";
+import ReactSwitch from "react-switch";
+import { ThemeContext } from '../util.js/ThemeContext'
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
+
+    const { theme, toggleTheme } = useContext(ThemeContext);
 
     useEffect(() => {
         const onScroll = () => {
@@ -53,6 +60,41 @@ export const NavBar = () => {
                             <button><span>Let’s Connect</span></button>
                         </HashLink>
                     </span>
+                    <div className="switch">
+                        <label>{theme === "light" ? "Light Mode": "Dark Mode"}</label>
+                        <ReactSwitch uncheckedIcon={
+                            <div 
+                                style={{ display: "flex", 
+                                    alignItems: "center", 
+                                    justifyContent: "center", 
+                                    height: "100%",
+                                    fontSize: 18, 
+                                    color: "#111", 
+                                    paddingRight: 2, 
+                                    }} 
+                                >
+                                <img src={lightIcon} alt="Day Icon"></img>
+                            </div> } 
+                            checkedIcon={
+                                <div
+                                    style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                    height: "100%",
+                                    fontSize: 18,
+                                    color: "#fff",
+                                    paddingRight: 2,
+                                    }}
+                                >
+                                    <img src={darkIcon} alt="Night Icon"></img>
+                                </div>
+                            } 
+                            onChange={toggleTheme}
+                            onColor="#4169E1"
+                            checked={theme === "dark"}
+                        />
+                    </div>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
