@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.65276e68.css",
-    "main.js": "/portfolio/static/js/main.b0e029d5.js",
-    "static/js/453.b21437c2.chunk.js": "/portfolio/static/js/453.b21437c2.chunk.js",
+    "main.css": "/portfolio/static/css/main.9da7bd8e.css",
+    "main.js": "/portfolio/static/js/main.c16ddd10.js",
+    "static/js/453.2fa7cac9.chunk.js": "/portfolio/static/js/453.2fa7cac9.chunk.js",
     "static/media/seo-example.png": "/portfolio/static/media/seo-example.cc0d06f1c512a77d9310.png",
     "static/media/atwork-example.png": "/portfolio/static/media/atwork-example.2b0f513592d524bd54b8.png",
     "static/media/liquidware-example.png": "/portfolio/static/media/liquidware-example.85a6890f5ddc3c7ab988.png",
     "static/media/AWFY_Logo.png": "/portfolio/static/media/AWFY_Logo.3d3b263ac587883ae9c1.png",
+    "static/media/day-mountain.jpg": "/portfolio/static/media/day-mountain.1b7a2a5e3d1abc6f4b69.jpg",
     "static/media/mountains-background.png": "/portfolio/static/media/mountains-background.2f00a8f56cc2cbf2f222.png",
+    "static/media/chat-bubble1.png": "/portfolio/static/media/chat-bubble1.d4604437d7c5ab9116df.png",
     "static/media/night-background.png": "/portfolio/static/media/night-background.93a0459daa4584121be2.png",
     "static/media/Liquidware_FInal_Full_Color_Logo.jpg": "/portfolio/static/media/Liquidware_FInal_Full_Color_Logo.c46109dc16c912bb7bb6.jpg",
     "static/media/WordPress.com-Logo.wine.png": "/portfolio/static/media/WordPress.com-Logo.wine.02afbc6603ce0c1f3b42.png",
+    "static/media/day.jpg": "/portfolio/static/media/day.1a75ea70e70d4b1dd6bf.jpg",
     "static/media/Cute Avatar.png": "/portfolio/static/media/Cute Avatar.8c72a6210a08d3d5e28d.png",
     "static/media/php.png": "/portfolio/static/media/php.77015ebdac1837247829.png",
     "static/media/c-sharp-logo.png": "/portfolio/static/media/c-sharp-logo.9b41ba0f988ade8e0276.png",
@@ -21,12 +24,12 @@
     "static/media/linkedin.png": "/portfolio/static/media/linkedin.f249b38224ca41a0b909.png",
     "static/media/revicons.woff": "/portfolio/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/portfolio/index.html",
-    "main.65276e68.css.map": "/portfolio/static/css/main.65276e68.css.map",
-    "main.b0e029d5.js.map": "/portfolio/static/js/main.b0e029d5.js.map",
-    "453.b21437c2.chunk.js.map": "/portfolio/static/js/453.b21437c2.chunk.js.map"
+    "main.9da7bd8e.css.map": "/portfolio/static/css/main.9da7bd8e.css.map",
+    "main.c16ddd10.js.map": "/portfolio/static/js/main.c16ddd10.js.map",
+    "453.2fa7cac9.chunk.js.map": "/portfolio/static/js/453.2fa7cac9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.65276e68.css",
-    "static/js/main.b0e029d5.js"
+    "static/css/main.9da7bd8e.css",
+    "static/js/main.c16ddd10.js"
   ]
 }
