@@ -1,5 +1,7 @@
+import { useState, useEffect } from 'react';
 import { Nav, Row, Col, Container, Tab } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
+import { ScrollTransition } from '../util.js/ScrollTransition';
 import clientImg1 from "../assets/AWFY_Logo.png";
 import clientImg2 from "../assets/atwork-example.png";
 import clientImg3 from "../assets/Liquidware_FInal_Full_Color_Logo.jpg";
@@ -10,6 +12,13 @@ import clientImg6 from "../assets/seo-example.png";
 
 
 export const Projects = () => {
+    const [animate, setAnimate] = useState(false);
+    const [ref, inView] = ScrollTransition({ threshhold: 0.3 });
+    
+    useEffect(() => {
+        if (inView) setAnimate(true); // trigger once when visible
+    }, [inView]);
+
     const atwork = [
         {
             title: "AtWork Group",
@@ -55,7 +64,7 @@ export const Projects = () => {
     ];
 
     return (
-        <section className="project" id="projects">
+        <section ref={ref} className={`project ${animate ? "fade-in" : "" }` } id="projects">
             <Container>
                 <Row>
                     <Col>

@@ -1,8 +1,18 @@
-import { useRef } from 'react';
+import { useRef, useContext, useState, useEffect } from 'react';
+import { ThemeContext } from '../util.js/ThemeContext';
 import { Container, Row, Col } from "react-bootstrap";
+import { ScrollTransition } from '../util.js/ScrollTransition';
 import emailjs from '@emailjs/browser';
 
 export const Contact = () => {
+    const { theme } = useContext(ThemeContext);
+    const [ref, inView] = ScrollTransition({ threshhold: 0.3 });
+    const [animate, setAnimate] = useState(false);
+
+    useEffect(() => {
+    if (inView) setAnimate(true); // trigger once when visible
+  }, [inView]);
+
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
@@ -20,9 +30,9 @@ export const Contact = () => {
       };
 
     return (
-        <section className='contact' id="connect">
+        <section ref={ref} className={`contact ${inView ? "animate-bg" : "reverse-bg"}`} data-theme={theme} id="connect">
             <Container className='contact-content'>
-                <Row className="align-items-center-contact">
+                <Row className={`align-items-center-contact ${animate ? "fade-in" : "" } `}>
                     <Col md={6}>
                         <h2>Get In Touch</h2>
                         <div id="contact">

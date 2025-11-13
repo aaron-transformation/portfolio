@@ -38,7 +38,7 @@ export const Skills = () => {
             <Container>
                 <Row>
                     <Col>
-                        <div className="skill-box">
+                        <div className="skill-box fade-in">
                             <h2>Skills</h2>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">

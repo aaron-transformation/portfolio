@@ -1,5 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { ScrollTransition } from '../util.js/ScrollTransition';
 import logo from "../assets/Cute Avatar.png";
 import chat from "../assets/chat-bubble1.png";
 import navIcon1 from '../assets/linkedin.png';
@@ -7,15 +8,19 @@ import navIcon2 from '../assets/upwork.png';
 import navIcon3 from '../assets/github-mark-white.png';
 
 export const Footer = () => {
-  const [hover, setHover] = useState(false);
-
+  const [animate, setAnimate] = useState(false);
+  const [ref, inView] = ScrollTransition({ threshhold: 0.3 });
+    
+  useEffect(() => {
+      if (inView) setAnimate(true); // trigger once when visible
+  }, [inView]);
 
   return (
     <footer className="footer">
       <Container>
         <Row className="align-items-center">
         <Col size={12} sm={6}>
-            <img src={logo} alt="Logo" />
+            <img ref={ref} className={`${animate ? "slide-right" : "" }` } src={logo} alt="Logo" />
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
