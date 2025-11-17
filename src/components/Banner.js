@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from '../assets/Cute Avatar.png'
+import cloudImg from '../assets/cloud3.png'
+import { randomWidth } from '../util.js/randomWith';;
 
 export const Banner = () => {
     const [num, setNum] = useState(0);
@@ -39,9 +41,29 @@ export const Banner = () => {
         }
     }
 
+    // useEffect(() => {
+    //     randomWidth(160, 500);
+    // }, []);
+
     return (
         <section className="banner" id="home">
-            <Container>
+            <Container className="banner-container">
+                <Row className="cloud-row" id="cloud1">
+                    <Col className="cloud-col">
+                        <img className="cloud" src={cloudImg} alt="Cloud"  />
+                        <img className="cloud" src={cloudImg} alt="Cloud"  />
+                        <img className="cloud" src={cloudImg} alt="Cloud"  />
+                        <img className="cloud" src={cloudImg} alt="Cloud"  />
+                    </Col>
+                </Row>
+                <Row className="cloud-row" id="cloud2">
+                    <Col className="cloud-col">
+                        <img className="cloud" src={cloudImg} alt="Cloud"  />
+                        <img className="cloud" src={cloudImg} alt="Cloud"  />
+                        <img className="cloud" src={cloudImg} alt="Cloud"  />
+                        <img className="cloud" src={cloudImg} alt="Cloud"  />
+                    </Col>
+                </Row>
                 <Row className="align-items-center fade-in">
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
@@ -56,7 +78,7 @@ export const Banner = () => {
                         </p>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <img src={headerImg} alt="Avatar" />
+                        <img className="avatar" src={headerImg} alt="Avatar" />
                     </Col>
                 </Row>
             </Container>

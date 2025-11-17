@@ -117,6 +117,15 @@ input:focus, textarea:focus, select:focus {
 	}
 }
 
+@media (max-width: 760px) {
+  .cloud {
+    display: none;
+  }
+  .banner:before, .banner:after {
+    display: none;
+  }
+}
+
 p.success {
 	color: green;
 }
@@ -316,6 +325,38 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition-duration: 0.5s;
 }
 
+.banner:before, .banner:after {
+    top: 0;
+    position: absolute;
+    width: 70px;
+    height: 1000px;
+    content: "";
+    z-index: 2;
+}
+
+[data-theme="light"] .banner:before {
+    left: 0;
+    background: linear-gradient(to left , rgba(255, 255, 255, 0), #ffffff);
+}
+[data-theme="light"] .banner:after {
+    right: 0;
+    background: linear-gradient(to right , rgba(255, 255, 255, 0), #ffffff);
+}
+
+[data-theme="dark"] .banner:before {
+    left: 0;
+    background: linear-gradient(to left , rgba(0, 0, 0, 0), #121212);
+}
+
+[data-theme="dark"] .banner:after {
+    right: 0;
+    background: linear-gradient(to right , rgba(0, 0, 0, 0), #121212);
+}
+
+.banner .align-items-center {
+  z-index: 5;
+}
+
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -367,9 +408,43 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 25px;
 }
 
-.banner img {
+.banner .avatar {
   animation: updown 3s linear infinite;
   z-index: 99;
+}
+
+.cloud-row {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+#cloud1 {
+  top: 0;
+  animation: floatAcrossAnimation1 64s linear infinite;
+}
+
+#cloud2 {
+  top: 2%;
+  animation: floatAcrossAnimation2 60s linear infinite;
+}
+
+.cloud-col {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.cloud {
+  width: 280px;
+  height: auto;
+}
+
+[data-theme="dark"] .cloud {
+  opacity: 0.2;
 }
 
 .txt-rotate > .wrap {
@@ -754,6 +829,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     100% {
         transform: translateY(-20px);
     }
+}
+
+@keyframes floatAcrossAnimation1 {
+  0% {
+    transform: translateX(-125vw);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes floatAcrossAnimation2 {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
 }
 
 @keyframes fadeInAnimation {
