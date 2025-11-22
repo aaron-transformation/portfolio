@@ -2,66 +2,17 @@ import { useState, useEffect } from 'react';
 import { Nav, Row, Col, Container, Tab } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import { ScrollTransition } from '../util.js/ScrollTransition';
-import clientImg1 from "../assets/AWFY_Logo.png";
-import clientImg2 from "../assets/atwork-example.png";
-import clientImg3 from "../assets/Liquidware_FInal_Full_Color_Logo.jpg";
-import clientImg4 from "../assets/liquidware-example.png";
-import clientImg5 from "../assets/seo-logo.jpg";
-import clientImg6 from "../assets/seo-example.png";
-
-
+import { ProjectTheme } from '../util.js/ProjectTheme';
 
 export const Projects = () => {
     const [animate, setAnimate] = useState(false);
     const [ref, inView] = ScrollTransition({ threshhold: 0.3 });
+
+    const { atwork, liquidware, seo, sleep, srr } = ProjectTheme();
     
     useEffect(() => {
         if (inView) setAnimate(true); // trigger once when visible
     }, [inView]);
-
-    const atwork = [
-        {
-            title: "AtWork Group",
-            description: "Recruiting Agency",
-            imgURL: clientImg1,
-            url: "https://www.atwork.com/",
-        },
-        {
-            title: "CMS Website Development",
-            description: "Developing & Troubleshooting",
-            imgURL: clientImg2,
-            url: "https://www.atwork.com/",
-        },
-
-    ];
-    const liquidware = [
-        {
-            title: "Liquidware",
-            description: "Digital Workspace Management",
-            imgURL: clientImg3,
-            url: "https://www.liquidware.com/",
-        },
-        {
-            title: "Converting Figma Mockups",
-            description: "Design & Develop",
-            imgURL: clientImg4,
-            url: "https://www.liquidware.com/",
-        },
-    ];
-    const seo = [
-        {
-            title: "SEOLevelUp",
-            description: "Web Design SEO Company",
-            imgURL: clientImg5,
-            url: "https://seolevelup.com/",
-        },
-        {
-            title: "Lift and Shifts",
-            description: "Migrating Content",
-            imgURL: clientImg6,
-            url: "https://seolevelup.com/",
-        },
-    ];
 
     return (
         <section ref={ref} className={`project ${animate ? "fade-in" : "" }` } id="projects">
@@ -80,6 +31,12 @@ export const Projects = () => {
                                 <Nav.Item>
                                     <Nav.Link eventKey="third">SEOLevelUp</Nav.Link>
                                 </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link eventKey="fourth">Sleep Science Academy</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link eventKey="fifth">Southern Rock Restaurants</Nav.Link>
+                                </Nav.Item>
                             </Nav>
                             <Tab.Content>
                                 <Tab.Pane eventKey="first">
@@ -94,7 +51,7 @@ export const Projects = () => {
                                     </Row>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="second">
-                                <Row>
+                                    <Row>
                                         {
                                             liquidware.map((client, index) => {
                                                 return (
@@ -105,9 +62,31 @@ export const Projects = () => {
                                     </Row>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="third">
-                                <Row>
+                                    <Row>
                                         {
                                             seo.map((client, index) => {
+                                                return (
+                                                    <ProjectCard key={index}{...client} />
+                                                )
+                                            })
+                                        }
+                                    </Row>
+                                </Tab.Pane>
+                                <Tab.Pane eventKey="fourth">
+                                    <Row>
+                                        {
+                                            sleep.map((client, index) => {
+                                                return (
+                                                    <ProjectCard key={index}{...client} />
+                                                )
+                                            })
+                                        }
+                                    </Row>
+                                </Tab.Pane>
+                                <Tab.Pane eventKey="fifth">
+                                    <Row>
+                                        {
+                                            srr.map((client, index) => {
                                                 return (
                                                     <ProjectCard key={index}{...client} />
                                                 )

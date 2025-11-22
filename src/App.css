@@ -587,6 +587,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  cursor: pointer;
 }
 
 .proj-imgbx img {
@@ -638,6 +639,57 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
+}
+
+.modal-60w {
+  max-width: 60% !important;
+}
+
+.custom-modal-header {
+  background-color: var(--bg);
+  color: var(--text-color);
+  transition: 0.8s;
+}
+
+.custom-modal-header p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.custom-modal-body {
+  background-color: var(--bg);
+
+  color: var(--text-color);
+  transition: 0.8s;
+}
+
+.custom-modal-body p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.custom-modal-footer {
+  background-color: var(--bg) !important;
+  color: var(--text-color);
+  transition: 0.8s;
+}
+
+.custom-modal-footer button {
+  color: var(--text-color);
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.service-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.service-list li {
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 /*Contact Form CSS*/
