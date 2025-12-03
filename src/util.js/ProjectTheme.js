@@ -30,7 +30,7 @@ export function ProjectTheme() {
             title: "WordPress Development",
             client: "AtWork Group",
             services: {"first": "Updating Pages And Adding New Content", "second": "SEO", "third": "Quality Assurance", "fourth": "Integrating Third-Party Tools, such as Google Tag Manager"},
-            description: "Recruiting Agency",
+            description: "Aaron is a fantastic partner for our team. He is responsive and a creative problem solver. We have completely retooled our brand, website and digital assets. We couldn’t have done it without Aaron’s knowledge and partnership.",
             imgURL: clientImg2,
             url: "https://www.atwork.com/",
         },
@@ -81,7 +81,7 @@ export function ProjectTheme() {
                 "third": "Ensuring Website Is Responsive Across Different Browsers and Devices", "fourth": 
                 "Troubleshooting Any Issues That Arise"
             },
-            description: "Web Design SEO Company",
+            description: "Aaron is phenomenal with dialing everything in on time and accurate. We are using him exclusively for our agency now!",
             imgURL: clientImg6,
             url: "https://seolevelup.com/",
         },
